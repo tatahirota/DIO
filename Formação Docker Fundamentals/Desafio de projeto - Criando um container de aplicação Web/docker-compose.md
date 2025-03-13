@@ -1,17 +1,17 @@
-version: '3.8'   
-services:   
-  apache:   
-    image: httpd:latest   
+#version: '3.8'   
+#services:   
+  #apache:   
+    #image: httpd:latest   
     container_name: apache-desafio1-web-dio   
-    ports:   
+   #ports:   
       - '80:80'  
-    volumes:
+    #volumes:
       - ./site-desafio:/usr/local/apache2/htdocs/   
       
-    networks:   
+   #networks:   
       - minha-net   
      
-networks:   
+#networks:   
     minha-net:      
       driver: bridge      
 
